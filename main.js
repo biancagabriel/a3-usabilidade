@@ -1,4 +1,4 @@
-/*'use strict'
+'use strict'
 
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
@@ -142,4 +142,4 @@ document.querySelector('#tableClient>tbody')
     .addEventListener('click', editDelete)
 
 document.getElementById('cancelar')
-    .addEventListener('click', closeModal)*/
+    .addEventListener('click', closeModal)
