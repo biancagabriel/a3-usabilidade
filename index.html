@@ -1,64 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/records.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <script src="main.js" defer></script>
-    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Login CRUD</title>
 </head>
 
-<body>
-    <header>
-        <h1 class="header-title">Cadastro de Clientes</h1>
-    </header>
-    <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table id="tableClient" class="records">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Celular</th>
-                    <th>Cidade</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
+<!-- Esqueleto da página -->
 
-            </tbody>
-        </table>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
-                        required>
-                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
+<body>
+    <!-- Div central da página -->
+    <div class="main-login">
+        <!-- Div lado esquerdo da página -->
+        <div class="left-login">
+            <h1>Locadora CRUD</h1>
+
+            <!-- ARRUMAR -->
+            <h2>Alugue filmes sem sair de casa</h2>
+
+            <img src="cineminha.svg" class="left-img-login" alt="Cineminha Animado">
+        </div>
+        <!-- Div lado direito da página onde tem os campos de entrada -->
+        <div class="tela-login">
+            <div class="card-login">
+                <h1><b>Login</b></h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Insira o usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Insira a senha">
+                </div>
+                <button class="botao-login">Login</button>
+                <p>Não é cadastrado?
+
+                    <!-- ARRUMAR, TENTEI E NAO CONSEGUI GRRR -->
+                    <a href="cadastro_cliente.html">Crie um cadastro.</a>
+                    
+                </p>
             </div>
         </div>
-    </main>
-    <footer>
-    
-    </footer>
+    </div>
+
 </body>
 
 </html>
